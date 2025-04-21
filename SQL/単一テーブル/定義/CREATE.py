@@ -11,7 +11,7 @@ conn = sqlite3.connect(db_path)
 cur = conn.cursor()
 
 query = "CREATE TABLE items(\
-    item_id INTEGER PRIMARY KEY,\
+    item_id INTEGER PRIMARY KEY AUTOINCREMENT,\
     item_name STRING,\
     price INTEGER)"
 

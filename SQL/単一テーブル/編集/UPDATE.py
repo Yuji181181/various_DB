@@ -10,7 +10,7 @@ db_path = os.path.join(parent_dir, "single_table.db")
 conn = sqlite3.connect(db_path)
 cur = conn.cursor()
 
-query = ""
+query = "UPDATE items SET VALUE"
 
 cur.execute(query)
 conn.commit()
