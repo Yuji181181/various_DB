@@ -10,7 +10,7 @@ db_path = os.path.join(parent_dir, "single_table.db")
 conn = sqlite3.connect(db_path)
 cur = conn.cursor()
 
-query = ""
+query = "DROP TABLE items"
 
 cur.execute(query)
 conn.commit()
